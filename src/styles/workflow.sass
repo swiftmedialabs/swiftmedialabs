@@ -1,0 +1,64 @@
+// For laptop screen
+@media only screen and (min-width: 992px)
+    .workflow-intro-para
+        font-size: 14px
+
+    .step-no-1, .step-no-2, .step-no-3
+        background: #16b1ff26
+        padding: 5px
+        border-radius: 20px
+        font-size: 110%
+        &:hover
+            background: #393185
+            color: white
+            cursor: pointer
+    .step-title-1,.step-title-2,.step-title-3
+        font-size: 150%
+        padding-block-start: 10px
+    .step-title-1,.step-title-2,.step-title-3
+        &::after
+            content: ' '
+            display: block
+            margin-top: 8px
+            height: 6px
+            width: 30%
+            background: #393185
+            color: blue
+    .step-desc-1,.step-desc-2,.step-desc-3
+        font-size: 90%
+        width: 80%
+// For laptop screen
+@media only screen and (max-width: 992px)
+    .workflow-container
+        padding: 50px 0
+    .workflow-title
+        font-size: 120%
+    .workflow-intro-para
+        font-size: 14px
+
+    .step-no-1, .step-no-2, .step-no-3
+        background: #16b1ff26
+        border-radius: 20px
+        font-size: 110%
+        &:hover
+            background: #393185
+            color: white
+    .step-title-1,.step-title-2,.step-title-3
+        font-size: 150%
+        padding-block-start: 10px
+    .step-title-1,.step-title-2,.step-title-3
+        &::after
+            content: ' '
+            display: block
+            margin-top: 8px
+            margin-left: 25%
+            height: 6px
+            width: 50%
+            background: #393185
+            color: blue
+    .step-desc-1,.step-desc-2,.step-desc-3
+        font-size: 90%
+        width: 100%
+.workflow-hover
+    &:hover
+        box-shadow: 1px 1px 8px 1px  #5095b171

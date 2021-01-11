@@ -1,0 +1,102 @@
+// For laptop screen
+@media only screen and (min-width: 992px)
+    *
+        // border: .2px solid gray
+    .core-tech-intro
+        font-size: 14px
+        color: #393185
+    .core-tech-tab-container
+        .core-tech-tabs
+            padding: 17px 29px
+            border-radius: 40px
+            border: 0.000001px solid #2e93d140
+            box-shadow: .2px 2px 8px -4px blue
+            .core-tech-2
+                border: 1px solid blue
+                border-top: none
+                border-bottom: none
+                padding: 0px 12px
+            .core-tech-1, .core-tech-2, .core-tech-3
+                text-decoration: none
+                color: red
+                &:hover
+                    text-decoration: none
+                    cursor: pointer
+                    color: blue
+    .web-dev-tab
+        .web-dev-container
+            font-size: 300%
+            border: .7px solid #393185
+            border-radius: 4px
+            width: 110px
+            height: 110px
+            display: flex
+            justify-content: center
+            align-items: center
+            &:hover
+                color: white
+                background: #393185
+    .tooltip
+        .tooltiptext
+            visibility: hidden
+            width: 120px
+            background-color: black
+            color: #fff
+            text-align: center
+            padding: 5px 0
+            border-radius: 6px
+            position: absolute
+            z-index: 1
+        &:hover
+            .tooltiptext
+                visibility: visible
+    .purple-dots-core-tech
+        height: 300px
+        width: 300px
+        position: absolute
+        left: -120px
+        top: -150px
+        transform: rotateZ(90deg)
+
+// For mobile screen
+@media only screen and (max-width: 992px)
+    *
+        // border: .2px solid gray
+    .core-tech-heading
+        font-size: 140%
+    .core-tech-intro
+        font-size: 90%
+        color: #393185
+    .core-tech-tab-container
+        width: 100%
+        .core-tech-tabs
+            padding: 10px 10px
+            text-indent: -15px
+            border-radius: 40px
+            border: 0.000001px solid #2e93d140
+            box-shadow: .2px 2px 8px -4px blue
+            font-size: 90%
+            .core-tech-2
+                border: 1px solid blue
+                border-top: none
+                border-bottom: none
+                padding: 0px 12px
+            .core-tech-1, .core-tech-2, .core-tech-3
+                text-decoration: none
+                color: red
+                &:hover
+                    text-decoration: none
+                    cursor: pointer
+                    color: blue
+    .web-dev-tab
+        .web-dev-container
+            font-size: 100%
+            border: .7px solid #393185
+            border-radius: 4px
+            padding: 10px
+            margin: 5px
+            width: auto
+            height: auto
+            &:hover
+                color: white
+                background: #393185

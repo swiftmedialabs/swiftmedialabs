@@ -1,0 +1,136 @@
+// For laptop screen
+@media only screen and (min-width: 992px)
+    *
+        // border: .2px solid gray
+    #services
+        height: 80vh
+        position: relative
+        top: -20vh
+    .services-content
+        position: relative
+        left: 100px
+        top: 60px
+    .services-branding
+        font-size: 110%
+    .services-title
+        font-size: 150%
+    .services-laptop-button-container
+        margin-inline-start: -11px
+        padding-top: 20px
+        .services-laptop-buttons
+            width: 75% !important
+            padding: 6px
+            .services-action-button
+                text-align: center
+                padding: 10px 20px
+                background: #16b1ff26
+                color: #0E77FF
+                text-decoration: none
+                font-weight: 900
+                font-size: 80%
+                min-width: 70%
+                margin: 0
+                border-radius: 10px
+                border: 2px
+                &:hover
+                    background: #393185
+                    color: white
+    .services-portfolio-container
+        // padding-block-start: 40px .. These styles don't affect anything
+        // padding-inline-start: 23px
+        .services-portfolio-button
+            text-decoration: none
+            color: white
+            padding: 8px 16px
+            border-radius: 70px
+            &:hover
+                color: red
+                border: 0.2px solid red
+                background: transparent
+
+    .services-purple-container::before
+        content: ' '
+        display: block
+        height: 100vh
+        position: absolute
+        right: 0
+        top: -10vh
+        background: #393185
+        z-index: -1
+        width: 420px
+        border-radius: 50px 0px 0px 50px
+
+    .services-inner-content
+        .services-1, .services-2, .services-4, .services-3, .services-5
+            padding: 40px
+            background: white
+            box-shadow: 1px 1px 6px 8px #16b1ff26
+            .custom-checkbox
+                color: red
+                background: pink
+    .list-items
+        line-height: 30px
+// For laptop screen
+@media only screen and (max-width: 992px)
+    *
+        // border: .2px solid gray
+    .services-branding
+        font-size: 150%
+        color: white
+        padding: 20px 0
+    .services-title
+        font-size: 117%
+        width: 100%
+        padding-top: 15px
+    .services-laptop-button-container
+        margin-inline-start: -11px
+        width: calc( 100% - 100px )
+        .services-laptop-buttons
+            padding: 9px
+            .services-action-button
+                text-align: center
+                padding: 10px
+                background: #16b1ff26
+                color: #0E77FF
+                text-decoration: none
+                font-weight: 900
+                font-size: 60%
+                min-width: 80%
+                border-radius: 10px
+                border: 2px
+                &:hover
+                    background: #393185
+                    color: white
+    .services-portfolio-container
+        padding-block-start: 40px
+        padding-inline-start: 23px
+        .services-portfolio-button
+            text-decoration: none
+            color: white
+            padding: 6px 16px
+            border-radius: 70px
+
+    .services-purple-container-mobile::before
+        content: ' '
+        display: block
+        height: 160px
+        position: absolute
+        right: 0
+        top: 0
+        background: #393185
+        z-index: -1
+        width: 100%
+        border-radius: 30px 30px 0px 0px
+
+    .services-inner-content-mobile
+        .services-3
+            font-size: 80%
+            padding: 10px
+            background: white
+            h1
+                font-size: 180%
+            .custom-checkbox
+                color: red
+                background: pink
+    .list-items
+        line-height: 30px

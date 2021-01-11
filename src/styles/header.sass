@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap')// header-container
+
+.primary-orange
+    color: #EF7F1A
+.primary-blue
+    color: #393185
+.primary-blue-bg
+    background: #393185
+.primary-red-bg
+    background: #E31E24
+.primary-red
+    color: #E31E24
+.primary-orange-bg
+    background: #EF7F1A
+
+.font-600
+    font-weight: 600
+.font-800
+    font-weight: 800
+
+*
+    font-family: Poppins
+    // border: 0.2px solid green
+
+*:select
+    background: red
+    color: white
+
+a
+    &:hover
+        cursor: pointer !important
+body
+    overflow-x: hidden
+// For laptop screen
+@media only screen and (min-width: 992px)
+    .header-container
+        padding: 40px 0px
+        height: calc( 100vh - 100px )
+        .header-intro-text
+            padding: 20px 0px
+            .we-do
+                font-size: 380%
+                font-weight: 500
+                letter-spacing: 0.1px
+            .fading-up-text
+                font-weight: 650
+                letter-spacing: 0.1px
+                font-size: 380%
+            .header-paragraph
+                padding: 10px 10px 20px 0px
+                width: 80%
+                text-overflow: clip
+                font-size: 110%
+                opacity: 0.6
+            .portfolio-button-container
+                padding: 20px
+                margin-left: -20px
+                .portfolio-arrows
+                    position: relative
+                    top: -16px
+                    *:nth-child(1)
+                        position: relative
+                        left: 10px
+                        top: 20px
+                        font-size: 160%
+                        animation: portfolio-blink 1s ease-in-out 2s infinite alternate
+                    *:nth-child(2)
+                        position: relative
+                        left: 5px
+                        top: 12px
+                        font-size: 250%
+                        height: 0px
+                        animation: portfolio-blink 1s ease-in-out 2.5s infinite alternate
+                        overflow: visible
+                    *:nth-child(3)
+                        position: relative
+                        left: 5px
+                        animation: portfolio-blink 1s ease-in-out 3s infinite alternate
+                        font-size: 380%
+                .portfolio-button
+                    text-decoration: none
+                    color: white
+                    padding: 10px 16px
+                    border-radius: 70px
+                    font-size: 80%
+                    &:hover
+                        color: red
+                        border: 1px solid red
+                        background: white
+
+    @keyframes portfolio-blink
+        0%
+            opacity: 0.1
+        100%
+            opacity: 1
+
+    .follow-section
+        margin-top: 10px
+        position: relative
+        left: 28px
+    .follow-icons
+        a
+            text-decoration: none
+            color: white
+            &:hover
+                text-decoration: none
+        .follow--container
+            height: 32px
+            width: 32px
+            border-radius: 50px
+            margin: 2px
+            cursor: pointer
+            &:hover
+                color: #3663a7a4
+                border: 1px solid #3663a7a4
+                background: transparent !important
+
+    .header-purple-container::before
+        content: ' '
+        display: block
+        height: calc(100vh + 30px)
+        position: absolute
+        right: 0
+        top: 0
+        background: #393185
+        z-index: -1
+        width: 380px
+        border-radius: 60px 0px 0px 60px
+
+    .header-image
+        img
+            width: 120%
+            position: relative
+            left: -150px
+            top: -100px
+    .fading-up-text
+        // animation: fadeUp 5s infinite forwards
+        // animation: fadeUp 3s ease-out infinite forwards
+        // position: relative
+        // top: -100px
+    @keyframes fadeUp
+        0%
+            width: 0px
+        100%
+            width: 100%
+
+@media only screen and (max-width: 992px)
+    .primary-md-orange
+        color: #EF7F1A
+    .header-container
+        .header-intro-text
+            .we-do
+                font-size: 200%
+                font-weight: 500
+                letter-spacing: 0.1px
+            .fading-up-text
+                font-weight: 650
+                letter-spacing: 0.1px
+                font-size: 200%
+
+            .header-paragraph
+                padding: 10px 10px 20px 0px
+                width: 100%
+                text-overflow: clip
+                font-size: 14px
+                opacity: 0.6
+            .portfolio-button-container
+                padding: 50px 5px
+                padding-left: 0
+                margin: 0
+                display: inline-block
+                .portfolio-arrows
+                    position: relative
+                    top: -16px
+                    *:nth-child(1)
+                        position: relative
+                        left: 10px
+                        top: 16px
+                        font-size: 120%
+                        animation: portfolio-blink 1s ease-in-out 2s infinite alternate
+                    *:nth-child(2)
+                        position: relative
+                        left: 5px
+                        top: 10px
+                        font-size: 200%
+                        height: 0px
+                        animation: portfolio-blink 1s ease-in-out 2.5s infinite alternate
+                        overflow: visible
+                    *:nth-child(3)
+                        position: relative
+                        left: 5px
+                        animation: portfolio-blink 1s ease-in-out 3s infinite alternate
+                        font-size: 320%
+                .portfolio-button
+                    text-decoration: none
+                    color: white
+                    padding: 6px 20px
+                    border-radius: 70px
+                    &:hover
+                        color: red
+                        border: 1px solid red
+                        background: white
+
+    @keyframes portfolio-blink
+        0%
+            opacity: 0.1
+        100%
+            opacity: 1
+
+    .follow-section
+        margin-top: 10px
+    .follow-icons
+        z-index: 1
+        .follow--container
+            height: 28px
+            width: 28px
+            border-radius: 50px
+            margin-inline: 4px
+            margin-inline-end: 5px
+            &:hover
+                color: red
+                border: 1px solid red
+                background: white
+
+    .header-purple-container-small
+        content: ' '
+        display: inline
+        height: 280px
+        position: absolute
+        right: 0
+        top: 250px
+        background: #393185
+        z-index: -1
+        width: 100px
+        border-radius: 40px 0px 0px 40px
+
+    .follow-icons
+        a
+            text-decoration: none
+            color: white
+            &:hover
+                text-decoration: none
+
+        .follow--container
+            height: 28px
+            width: 28px
+            border-radius: 50px
+            margin: 2px
+            cursor: pointer
+            &:hover
+                color: #3663a7a4
+                border: 1px solid #3663a7a4
+                background: transparent !important
+    .fading-up-text
+        // animation: fadeUp 3s ease-out infinite forwards
+        // position: relative
+        // top: -100px
+        @keyframes fadeUp
+            0%
+                width: 0px
+            100%
+                width: 100%
+                position: relative
+                opacity: 0
